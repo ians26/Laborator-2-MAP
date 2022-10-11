@@ -5,6 +5,25 @@ public class VendingMachine {
     private int productCapacity;
     private int machineID;
 
+    @Override
+    public String toString() {
+        return "VendingMachine: " +
+                "location='" + location + '\'' +
+                ", productCapacity=" + productCapacity +
+                ", machineID=" + machineID;
+    }
+
+    public VendingMachine(String location, int productCapacity, int machineID) {
+        this.location = location;
+        this.productCapacity = productCapacity;
+        this.machineID = machineID;
+    }
+
+    public VendingMachine() {
+        this.location = "default";
+        this.productCapacity = -1;
+        this.machineID = -1;
+    };
 
     public int getMachineID() {
         return machineID;

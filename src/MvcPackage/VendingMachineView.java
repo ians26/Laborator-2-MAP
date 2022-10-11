@@ -7,4 +7,16 @@ public class VendingMachineView {
         System.out.println("Vending machine location: " + location);
         System.out.println("Vending machine product capacity: " + productCapacity);
     }
+
+    public void askID(){
+        System.out.println("Insert Vending machine ID: ");
+    }
+
+    public void askLocation(){
+        System.out.println("Insert Vending machine location: ");
+    }
+
+    public void askCapacity(){
+        System.out.println("Insert Vending machine capacity: ");
+    }
 }
